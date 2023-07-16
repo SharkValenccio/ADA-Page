@@ -4,21 +4,25 @@ body{
     overflow: hidden;
 }
 
-#icon-menu {
+#iconMenu {
     height: 100px;
     width: 100px;
-    position: relative;
+    position: absolute;
     left: 50px;
+    margin-top: -50px;
+    z-index: 1;
 }
 
-.menu-radius{
+#menuRadius{
     height: 400px;
     width: 446px;
     border-radius: 50%;
-    position: flex;
-    margin-top: -12px;
-    margin-left: -440px;
-    background: rgba(22, 118, 107, 1);
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -340px;
+    background: rgb(32, 191, 172);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.557); 
+    z-index: 0;
 }
 
 nav{
@@ -47,7 +51,7 @@ nav .nav-content{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2); /*Sombra do Menu*/
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.416); /*Sombra do Menu*/
     top: 135px;
     left: -100px;
     
@@ -80,7 +84,7 @@ nav.open .nav-content span{
 
 .nav-content span a i{
     font-size: 25px;
-    color: #0e2431;
+    color: #a220ff;
     transform: rotate(calc(var(--i) * (180deg/5))) ; /*rotate icon code*/
     opacity: 0.8;
     transition: 0.2s;
