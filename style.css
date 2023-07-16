@@ -1,8 +1,59 @@
 body{
+    height: 100vh;
     background: black;
 }
 
 #icon-menu {
     height: 150px;
     width: 150px;
+    position: relative;
+    top:-40px;
+    left: 220px;
+}
+
+nav{
+    position: absolute;
+    top: 290px;
+    left: -120px; /* tag para mover o menu*/
+    align-content: left;
+    
+}
+
+nav .nav-content{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    
+}
+
+
+.nav-content .toggle-btn2,
+.nav-content span a{
+    height: 60px;
+    width: 60px;
+    background: #fff; /*color box menu*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); /*Sombra do Menu*/
+}
+.nav-content .toggle-btn{
+    font-size: 35px;
+    color: #0e2431;
+}
+
+.nav-content span a{
+    text-decoration: none; /*tag para tirar decoraçao do link*/
+} 
+
+.nav-content span a{
+    position: absolute;
+    transform: rotate(calc(var(--i) * (170deg/-5))) translateY(120px); /*rotate Radius menu*/
+}
+
+.nav-content span a i{
+    font-size: 25px;
+    color: #0e2431;
+    transform: rotate(calc(var(--i) * (170deg/5))) ; /*rotate icon code*/
 }
