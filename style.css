@@ -4,11 +4,11 @@ body{
 }
 
 #icon-menu {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     position: relative;
-    top:-40px;
-    left: 220px;
+    top:-19px;
+    left: 200px;
 }
 
 nav{
@@ -29,14 +29,16 @@ nav .nav-content{
 
 .nav-content .toggle-btn2,
 .nav-content span a{
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
     background: #fff; /*color box menu*/
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0,0,0,0.2); /*Sombra do Menu*/
+    left: 50px;
+    top: 15px;
 }
 .nav-content .toggle-btn{
     font-size: 35px;
@@ -49,11 +51,11 @@ nav .nav-content{
 
 .nav-content span a{
     position: absolute;
-    transform: rotate(calc(var(--i) * (170deg/-5))) translateY(120px); /*rotate Radius menu*/
+    transform: rotate(calc(var(--i) * (290deg/-8))) translateY(190px); /*rotate Radius menu*/
 }
 
 .nav-content span a i{
     font-size: 25px;
     color: #0e2431;
-    transform: rotate(calc(var(--i) * (170deg/5))) ; /*rotate icon code*/
+    transform: rotate(calc(var(--i) * (180deg/5))) ; /*rotate icon code*/
 }
