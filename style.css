@@ -8,18 +8,19 @@ body{
     height: 100px;
     width: 100px;
     position: absolute;
-    left: 50px;
+    left: 65px;
     margin-top: -50px;
     z-index: 1;
 }
 
 #menuRadius{
-    height: 400px;
-    width: 446px;
+    display: none;
+    height: 390px;
+    width: 440px;
     border-radius: 50%;
     position: absolute;
     margin-top: -200px;
-    margin-left: -340px;
+    margin-left: -320px;
     background: rgb(32, 191, 172);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.557); 
     z-index: 0;
@@ -68,13 +69,13 @@ nav .nav-content{
     position: absolute;
     transition: all 0.7s ease;
     opacity: 0;
-    left: -100px;
+    left: -80px;
     top: 130px;
      /*rotate Radius menu*/
 }
 
 nav.open .nav-content span{
-    transform: rotate(calc(var(--i) * (290deg/-8))) translateY(190px);
+    transform: rotate(calc(var(--i) * (288deg/-8))) translateY(183px);
     opacity: 1;
 }
 
